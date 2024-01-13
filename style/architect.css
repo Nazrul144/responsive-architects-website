@@ -9,6 +9,9 @@ body {
     font-family: 'Merriweather', serif;
     font-family: 'Work Sans', sans-serif;
 }
+.text-light-gray{
+    color: #727272;
+}
 
 .btn {
     border-radius: 8px;
@@ -16,9 +19,16 @@ body {
     color: #FFF;
     background: #FF900E;
     padding: 20px 25px;
-    font-weight:600px;
+    font-weight: 600px;
     cursor: pointer;
     border: 0;
+}
+
+.section-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+
 }
 
 /*Header section*/
@@ -33,11 +43,6 @@ nav {
     align-items: center;
 }
 
-.nav-title {
-    color: #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
-}
 
 nav>ul {
     display: flex;
@@ -72,51 +77,86 @@ nav li a {
 .banner-description {
     color: #727272;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
 
 /*Main section Start*/
-main{
+main {
     width: 1440px;
-    margin: 0 auto;
+    margin: 70 auto;
 }
 
 /*team style*/
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
 
-.team-title{
+.team-title {
     font-size: 2.8rem;
 }
-.team-description{
+
+.team-description {
     padding-bottom: 20px;
 }
-.team-title, .quick-list{
-color: #727272;
-font-weight: 500px;
+
+.team-title,
+.quick-list {
+    color: #727272;
+    font-weight: 500px;
 }
-.team-title, .of-our{
-    color:#131313;
+
+.team-title,
+.of-our {
+    color: #131313;
     font-weight: 700px;
 }
-.team-title, .text-features{
+
+.team-title,
+.text-features {
     color: #FF900E;
     font-weight: 700px;
 }
 
+/*Facts section*/
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-container-card-title{
+
+    font-weight: 600px;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -138,19 +178,22 @@ font-weight: 500px;
 /*Mobile Devices*/
 
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
+
 /*Tablet Devices*/
 @media screen and (min-width: 576px) and (max-width:992px) {
-    nav{
+    nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 20px;
     }
 }
